@@ -1,0 +1,18 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Oops!</title>
+    <link rel="stylesheet" th:href="@{/style.css}"></link>
+</head>
+
+<html>
+<div class="errorPage">
+    <span class="oops">Oops!</span><br/>
+    <img th:src="@{/MissingPage.png}"></img>
+    <p th:text="${'Details: ' + message}"></p>
+</div>
+</html>
+
+</html>
